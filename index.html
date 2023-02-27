@@ -1,0 +1,715 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Document</title>
+</head>
+
+
+   <style> 
+
+html{
+        box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+li{
+list-style-type: none;
+}
+.big-container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 920px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header{
+padding-top: 25px;
+position: absolute;
+left: 0;
+right: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list{
+    display: flex;
+    gap:0 40px;
+    padding-top: 25px;
+}
+.menu-list{
+    padding-left: 25px;
+}
+.menu-right{
+    padding-right: 80px;
+}
+.menu-link{
+color:white;
+font-size: 16px;
+}
+body{
+    color: white;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.promo{
+    background-image: url("https://gamerwall.pro/uploads/posts/2022-03/1648751618_14-gamerwall-pro-p-ford-mustang-tyomnii-fon-krasivie-15.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: right center;
+
+
+}
+.promo__inner{
+    padding-top: 120px;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+}
+.title{
+    font-size:76px ;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px; 
+}
+.subtitle{
+    font-size: 48px;
+    border-bottom: 1px solid white;
+    align-self: center;
+}
+.subtitle span{
+    display: block;
+    font-size: 36px;
+    padding: 10px 0; 
+}
+.promo_text{
+   padding: 10px 0;
+}
+.arrow{
+    margin-top: auto;
+    margin-bottom: 30px;
+    align-self: center;
+}
+.main{
+    background-color: black;
+}
+.info{
+    margin-bottom: 100px;
+}
+.info-part{
+    padding-top: 100px;
+display: flex;
+justify-content: space-between;
+}
+.info-part--third{
+    padding-top: 66px;
+}
+.info-part--first{
+display: block;
+}
+.info-title{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.info-part-textbox{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+.info-text{
+    flex-basis: 440px;
+    margin-bottom: 30px;
+}
+.info-part-img{
+    object-fit: cover;
+}
+.info-content{
+    flex-basis: 415px;
+}
+td{
+    padding: 20px;
+}
+.info-part--second .info-text{
+max-width: 352px;
+}
+.info-part--third .info-text{
+    max-width: 377px;
+}
+.info-table{
+    flex-basis: 450px;
+    
+    border-bottom: 1px solid white;
+    position: relative;
+}
+.info-table::before{
+    content: '';
+    border-top: 1px solid white;
+position: absolute;
+width: 100%;
+}
+.track{
+    padding-bottom: 90px;
+    background-image: url("https://img1.fonwall.ru/o/ex/side-view-muscle-cars-shiny-ford-mustang-shelby-gt-500.jpeg?route=mid&amp;h=750   ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.track-title{
+font-weight: 300;
+font-size: 32px;
+padding-top: 50px;
+padding-bottom: 30px;
+}
+.track-text{
+
+flex-basis: 540px;
+}
+dd,tt{
+    color:white;
+}
+.evo{
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+.evo-black{
+    background-color: black ;
+    padding: 100px 0 50px;
+}
+.evo-black-info{
+    display: flex;
+justify-content: space-between;
+}
+.evo-black-title{
+  padding-right: 50px;
+color:white;
+ font-weight: 300;
+ font-size: 32px;
+ text-transform: uppercase;
+}
+.evo-black-text{
+    font-size: 14px;
+  
+    margin-bottom: 30px;
+}
+.evo-black-infobox{
+    flex-basis: 437px;
+}
+.evo-desk-lr{
+    display: flex;
+  justify-content: center;
+  gap:0 65px;
+  font-size: 14px;
+}
+.evo-desk-lr dd{
+    text-transform: uppercase;
+ 
+}
+.evo-white-inner{
+    padding-top: 125px; 
+}
+.evo-white-text{
+    margin-bottom: 30px;
+}
+
+.evo-white-text:first-child{
+  max-width: 285px;
+}
+.evo-white-text:nth-child(2){
+    max-width: 437px;
+}
+.evo-white-text:nth-child(3){
+    max-width: 590px;
+}
+.blog{
+    margin-bottom: 100px;
+}
+.blog-title{
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.blog-item-title{
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 10px;
+min-height: 46px;
+}
+
+.blog-item-link{
+    font-size: 12px;
+    color:white;
+}
+.menu-mobile,.menu-btn{
+    display: none;
+}
+@media(max-width:1100px){
+.promo{
+    background-position: left center ;
+}
+.menu-mobile{
+    display: flex;
+    gap:0 20px; 
+}
+.menu-list{
+    display: none;
+}
+ .nav{
+    align-items: center;
+ }
+ .title{
+    font-size: 64px;
+ }
+ .subtitle{
+    font-size: 42px;
+ }
+ .subtitle span{
+    font-size: 42px;
+ }
+}
+ @media(max-width:920px){
+    
+    .menu-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45px;
+        cursor: pointer;
+        height: 30px;
+        background-color: transparent;
+        border:none;
+        z-index: 10;
+    }
+    .menu-btn span{
+height: 3px;
+width: 100%;
+background-color: #fff;
+    }
+    .menu-mobile{
+    display: none;
+    }
+    .menu-mobile.menu--open{
+  
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        height: 100vh;
+        z-index:  5;
+        text-align: center;
+        padding-top: 140px;
+    }
+    .logo{
+        z-index: 10;
+    }
+    .menu-link{
+        font-size: 3vh;
+        display: block;
+        padding:20px 0px;
+    }
+    .info-part-textbox{
+        display: block;
+        padding-bottom: 15px;
+    }
+    .info-part{
+        display: block;
+    }
+    .info-part--second .info-text .info-part--third .info-text {
+        width: 100%;
+    }
+    .info-table{
+        width: 100%;
+    }
+    .info-part-img{
+        width: 100%;
+    }
+ }
+ @media(max-width:610px){
+    .title{
+    font-size: 48px;
+ }
+ .evo-desk-lr{
+display: none;
+ }
+ .info-table{
+    width: 80%;
+    font-size: 10px;
+    }
+ .subtitle{
+    font-size: 34px;
+ }
+ .subtitle span{
+    font-size: 26px;
+ }
+}
+@media(max-width:340px){
+    .title{
+    font-size: 42px;
+ }
+ .subtitle{
+    font-size: 30px;
+ }
+ .info-table{
+   
+    font-size: 5px;
+    }
+}
+@media(max-width:340px){
+.menu-link{
+    padding: 15px 0;
+}
+}
+
+
+</style>
+ 
+
+
+
+<body>
+<header class="header">
+    <div class="big-container"> 
+         <nav class="nav">
+            <ul class="menu-list menu-left">
+                <li class="menu-item">
+                    <a href="" class="menu-link">о гонке</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">трек</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">mustang</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">новости</a>
+                </li>
+            </ul>
+            <a href="" class="logo">
+                <img src="https://i.pinimg.com/originals/82/f6/28/82f628947a6d78d6dbee7b9c324feeb2.jpg" width="70px" alt="logo" class="logo-img">
+            </a>
+            <ul class="menu-list menu-right">
+                <li class="menu-item">
+                    <a href="" class="menu-link">купить билеты</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">смотреть онлайн</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">контакты</a>
+                </li>
+            </ul>
+<button class="menu-btn">
+    <span>
+
+    </span>
+    <span>
+
+    </span>
+    <span>
+
+    </span>
+</button>
+
+            <ul class="menu-mobile menu--open">
+                <li class="menu-item">
+                    <a href="" class="menu-link">о гонке</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">трек</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">mustang</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">новости</a>
+                </li>
+        
+                <li class="menu-item">
+                    <a href="" class="menu-link">купить билеты</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">смотреть онлайн</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">контакты</a>
+                </li>
+            </ul>
+         </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="promo">
+        <div class="big-container">
+            <div class="promo__inner">
+                <h1 class="title">
+                    MUSTANG SUPER TROFEO
+                </h1>
+                <h2 class="subtitle">Гранд-финал 2022
+                    <span>3-6 ноября</span>
+                </h2>
+                <p class="promo_text">автодром Портимао,Португалия</p>
+               <a class="arrow" href="#">↓</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="info-part info-part--first">
+<h3 class="info-title">СУПЕР ТРОФЕО МИРОВОЙ ФИНАЛ</h3>
+<div class="info-part-textbox">
+    <p class="info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, eligendi omnis
+         earum sed incidunt consequuntur. Aut inventore, eos nemo reprehenderit error harum tempore
+          omnis tempora eaque eum earum, vitae a. Officia dignissimos ab tenetur, dicta, nihil fuga
+           dolor quas illo sed eius deleniti incidunt minima doloremque corporis sapiente perferendis 
+           accusamus nisi illum sequi odit voluptate laborum non veritatis ex. Natus maiores minus 
+           aut ratione!
+    </p>
+    <b class="info-text">Парад владельцев,превью и развлечения в паддоке для 
+                         болельшиков - лишь некоторые из меорприятии,
+                         организованных в
+                         рамках мероприятия.
+    </b>
+</div>
+<img  class="info-part-img"src="https://www.mustangspecs.com/wp-content/uploads/2014/04/VGJR_FDProgramPhoto-1.jpg" width="100%" alt="">
+            </div>
+            <div class="info-part info-part--second">
+                <div class="info-content">
+                    <h3 class="info-title">команды супер трофео</h3>
+                    <p class="info-text"> laudantium omnis. Officiis soluta corrupti expedita libero ea. Aliquam, hic.</p>
+                    <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae quisquam est incidunt, aliquam distinctio eos tenetur, quas recusandae et quasi obcaecati dolorum aperiam sed excepturi ipsam fugit. Vero maiores voluptas rem omnis debitis sit fugiat quidem neque voluptates repellendus accusantium, rerum dolor eveniet iure optio earum nisi pariatur vel, repudiandae laboriosam possimus, inventore quam nihil molestias? Molestias quibusdam, eaque quis nihil aspernatur, a maxime, rem suscipit soluta provident ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos atque harum omnis placeat temporibus ratione! Fugiat temporibus ea molestiae et praesentium fugit cupiditate magnam, ratione facilis sed consectetur, hic maiores voluptas aut alias. Dicta deleniti iusto atque placeat, dolorem voluptas? Aliquam veritatis fugiat at. Exercitationem totam soluta perferendis dignissimos id! laudantium omnis. Officiis soluta corrupti expedita libero ea. Aliquam, hic.</p>
+
+                </div>
+                <img src="https://get.wallhere.com/photo/car-vehicle-sports-car-Ford-Mitsubishi-2013-coupe-performance-car-netcarshow-netcar-car-images-car-photo-Mustang-GT3-supercar-land-vehicle-automotive-design-race-car-automobile-make-luxury-vehicle-race-track-shelby-mustang-stock-car-racing-touring-car-401361.jpg"width="50%" alt="" class="info__part-img">
+
+            </div>
+            <div class="info-part info-part--third">
+                <div class="info-content">
+                    <h3 class="info-title">Календаарь сезона Super trofeo Europe 2022 года</h3>
+                    <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam doloribus laudantium omnis. Officiis soluta corrupti expedita libero ea. Aliquam, hic.</p>
+                </div>
+<table class="info-table">
+    <tr>
+<td>этап 1</td>
+<td>имюла Италия</td>
+<td>1-3 апреля</td>
+    </tr>
+    <tr>
+        <td>этап 2</td>
+        <td>франция</td>
+        <td>3-5 июня</td>
+            </tr>
+            <tr>
+                <td>этап 3</td>
+                <td>Италия</td>
+                <td>1-3 июля</td>
+                    </tr>
+                    <tr>
+                        <td>этап 4</td>
+                        <td>Бельгия</td>
+                        <td>29-30 июля</td>
+                            </tr>
+                            <tr>
+                                <td>этап 5</td>
+                                <td>испания</td>
+                                <td>30сентября-2октября</td>
+                                    </tr>
+                                    <tr>
+                                        <td>этап 6</td>
+                                        <td>Португалия</td>
+                                        <td>3-4 ноября</td>
+                                            </tr>
+                                            <tr>
+                                                <td>гранд-финал2022</td>
+                                                <td>Португалия</td>
+                                                <td>5-6 ноября</td>
+                                                    </tr>
+</table>
+
+            </div>
+
+        </div>
+
+</section>
+<section class="track">
+<div class="container">
+    <h3 class="track-title">Трек портимао</h3>
+    <p class="track-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur possimus nesciunt, cupiditate assumenda impedit, libero culpa tenetur accusamus beatae expedita aliquam, doloremque laboriosam molestiae vel! Laboriosam rerum temporibus accusantium.</p>
+    </div>
+</section>
+<section class="evo">
+    <div class="evo-black">
+        <div class="container">
+<div class="evo-black-inner">
+    <div class="evo-black-info">
+        <h3 class="evo-black-title">Супер трофео Эво</h3>
+        <div class="evo-black-infobox">
+            <p class="evo-black-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus enim repellat praesentium facilis nulla. Alias et ut beatae maiores, voluptatibus molestias obcaecati excepturi quo cum labore, veniam reprehenderit placeat atque nam veritatis enim vitae eius explicabo. Nam repellendus ipsum eos hic quisquam! Temporibus incidunt praesentium culpa veniam repellat laborum illum!</p>
+            <p class="evo-black-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eveniet repellendus iusto exercitationem numquam! Possimus repudiandae adipisci, ipsum nesciunt nisi ea illo, veritatis necessitatibus pariatur cum laudantium iste eos quia modi neque dignissimos non eaque deleniti quidem accusantium quas sequi laborum omnis. Ea asperiores rem mollitia officia quos soluta esse!</p>
+        </div>
+    </div>
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mustang-mach-e-1573687504.png" width="100%" alt="" class="evo-black-img">
+<dl class="evo-desk-lr">
+    <div>
+        <dd>перемещение</dd>
+        <tt>5204m</tt>
+    </div>
+    <div>
+        <dd>крутящий момент</dd>
+        <tt>570hm при6500 об/м</tt>
+    </div>
+    <div>
+        <dd>мощность</dd>
+        <tt>620лс</tt>
+    </div>
+    <div>
+        <dd>макс скорость</dd>
+        <tt>325 km/ч</tt>
+    </div>
+    <div> 
+        <dd>0-100km/ч</dd>
+        <tt>2,9с</tt>
+    </div>
+</dl>
+</div>
+        </div>
+    </div>
+    <div class="evo-white">
+ <div class="container">
+    <div class="evo-white-inner">
+<p class="evo-white-text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione distinctio, magnam suscipit natus ullam fuga sint eum! Ex, tenetur praesentium!
+</p>
+<p class="evo-white-text">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, culpa eligendi? Perferendis nihil eveniet suscipit, quo sed dolorem distinctio unde quisquam, eius molestiae, debitis eligendi a et natus corporis. Reprehenderit est aspernatur vel obcaecati non laborum, atque magnam mollitia accusamus?
+</p>
+<p class="evo-white-text">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique esse atque aperiam veritatis sint fugit aliquam cumque harum, repellat qui velit minima amet iusto et ducimus quo ipsa temporibus! Odit iure, quod voluptatum asperiores vitae id dolorem neque ut aperiam dolore. Amet nobis quis suscipit expedita aliquam fugiat. Deserunt obcaecati neque dolorum id. Porro voluptatibus aspernatur placeat delectus ut, libero eveniet debitis, perspiciatis earum sequi obcaecati laudantium sapiente totam rem!
+</p>
+
+
+    </div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="blog">
+    <div class="container">
+        <h3 class="blog-title">
+            Блог
+        </h3>
+        <div class="blog-slider swiper">
+            <div class="swiper-wrapper">
+          
+                <div class="swiper-slide blog-item"><img class="blog-item-img"src="https://automotive-heritage.com/upload/ford_mustang_fastback_1.jpg"width="900px" alt="">
+                <h4 class="blog-item-title">Нельсон Пике стал победителемграндфинала в портимао</h4>
+                <p class="blog-item-text">Lorem ipsum dolor, sit ame aspernatur id. Illo porro odit accusamus.
+
+                </p>
+                <a href="#" class="blog-item-link">читать подробнее...</a>
+            </div>
+
+            <div class="swiper-slide blog-item"><img class="blog-item-img"src="https://automotive-heritage.com/upload/ford_mustang_fastback_1.jpg"width="900px" alt="">
+                <h4 class="blog-item-title">гранд финал 2022</h4>
+                <p class="blog-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo impedit praesentium vero natus modi eius voluptatibus repudiandae ipsam veritatis, iure est excepturi assumenda, cupiditate, doloribus enim vel reprehenderit officiis dolor..
+
+                </p>
+                <a href="#" class="blog-item-link">читать подробнее...</a>
+            </div>
+
+            <div class="swiper-slide blog-item"><img class="blog-item-img"src="https://automotive-heritage.com/upload/ford_mustang_fastback_1.jpg"width="900px" alt="">
+                <h4 class="blog-item-title">Нельсон Пике стал победителемграндфинала в портимао</h4>
+                <p class="blog-item-text">Lorem ipsum dolor, sit ame aspernatur id. Illo porro odit accusamus.
+
+                </p>
+                <a href="#" class="blog-item-link">читать подробнее...</a>
+            </div>
+
+            <div class="swiper-slide blog-item"><img class="blog-item-img"src="https://automotive-heritage.com/upload/ford_mustang_fastback_1.jpg"width="900px" alt="">
+                <h4 class="blog-item-title">гранд финал 2022</h4>
+                <p class="blog-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo impedit praesentium vero natus modi eius voluptatibus repudiandae ipsam veritatis, iure est excepturi assumenda, cupiditate, doloribus enim vel reprehenderit officiis dolor..
+
+                </p>
+
+                <a href="#" class="blog-item-link">читать подробнее...</a>
+           
+            </div>
+         
+            </div>
+           
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      
+        </div>
+    
+    </div>
+</section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const menuBtn=document.querySelector(".menu-btn");
+const menuMobile=document.querySelector(".menu-mobile");
+menuBtn.addEventListener('click',()=>{
+    menuMobile.classList.toggle('menu--open');
+
+
+});
+
+
+
+
+
+
+
+
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  loop: true,
+
+  // If we need pagination
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+
+});
+</script>
+</body>
+</html>
